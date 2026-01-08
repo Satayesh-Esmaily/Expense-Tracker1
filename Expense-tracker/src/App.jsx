@@ -10,7 +10,6 @@ function createId() {
     return crypto.randomUUID();
   return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
-
 export default function App() {
   const [expenses, setExpenses] = useState([
     { id: createId(), title: "Food", amount: 20, category: "Food", date: new Date().toISOString() },
